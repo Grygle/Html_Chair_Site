@@ -1,0 +1,21 @@
+header {
+    padding: 20px 0;
+}
+
+header {
+    background: black;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
