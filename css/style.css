@@ -62,14 +62,18 @@ span {
 .column-right .banner-name {
     text-transform: uppercase;
 }
-.column-right .banner-name, .column-right .content {
+.column-right .banner-name {
     font-family: ralewayregular;
+}
+
+.column-right .content {
+    font-family: ralewaylight;
 }
 
 .column-right {
     margin-left: -5px;
     padding-top: 126px;
-    padding-right: 150px;
+    padding-right: 130px;
 }
 
 .column-right .banner-name {
@@ -79,7 +83,7 @@ span {
 .column-right .content {
     padding-top: 28px;
     font-size: 15px;
-    margin-left: -7px;
-    line-height: 22px;
+    margin-left: -37px;
+    line-height: 21px;
     text-align: center;
 }
