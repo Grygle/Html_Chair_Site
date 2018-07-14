@@ -2,6 +2,7 @@
     padding: 10px 0;
     width: 1055px;
     margin: 0 auto;
+    position: relative;
 }
 
 header {
@@ -111,4 +112,24 @@ div .link-button {
     margin-left: -37px;
     line-height: 21px;
     text-align: center;
+}
+
+.scroll-right, .scroll-left {
+    position: absolute;
+    top: 0;
+    margin-top: 213px;
+    font-size: 73px;
+    color: rgb(36, 186, 159);
+    font-family: ralewayLight;
+    cursor: pointer;
+}
+
+.scroll-right {
+    right: 0;
+    margin-right: 2px;
+}
+
+.scroll-left {
+    left: 0;
+    margin-left: 2px;
 }
