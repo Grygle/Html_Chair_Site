@@ -2,7 +2,6 @@
     padding: 10px 0;
     width: 1055px;
     margin: 0 auto;
-    background: black;
 }
 
 header {
@@ -45,4 +44,42 @@ span {
     height: 503px;
     width: 100%;
     background: linear-gradient(rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+.introduction .column-left, .introduction .column-right {
+    float: left;
+    width: 50%;
+}
+
+.column-left {
+    padding-top: 60px;
+}
+.chair-image img {
+    height: 420px;
+    width: auto;
+}
+
+.column-right .banner-name {
+    text-transform: uppercase;
+}
+.column-right .banner-name, .column-right .content {
+    font-family: ralewayregular;
+}
+
+.column-right {
+    margin-left: -5px;
+    padding-top: 126px;
+    padding-right: 150px;
+}
+
+.column-right .banner-name {
+    font-size: 39px;
+}
+
+.column-right .content {
+    padding-top: 28px;
+    font-size: 15px;
+    margin-left: -7px;
+    line-height: 22px;
+    text-align: center;
 }
