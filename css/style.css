@@ -7,7 +7,7 @@
 
 header {
     background: black;
-    height: 40px;
+    height: 38px;
 }
 
 header h1 {
@@ -20,11 +20,11 @@ header nav {
 
 header li {
     float: left;
-    margin-left: 35px;
+    margin-left: 40px;
 }
 
 header li:first-child {
-    margin-right: 15px;
+    margin-right: 12px;
 }
 
 header h1, header a {
@@ -37,6 +37,12 @@ header h1, header a {
 }
 
 span {
-    color: green;
+    color: rgb(39, 199, 171);
     font-family: ralewaybold;
+}
+
+.introduction {
+    height: 503px;
+    width: 100%;
+    background: linear-gradient(rgb(255, 255, 255), rgb(200, 200, 200));
 }
