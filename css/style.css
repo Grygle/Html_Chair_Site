@@ -1,15 +1,13 @@
-header {
-    padding: 20px 0;
+.container {
+    padding: 10px 0;
+    width: 1055px;
+    margin: 0 auto;
+    background: black;
 }
 
 header {
     background: black;
-    color: white;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
+    height: 40px;
 }
 
 header h1 {
@@ -18,4 +16,27 @@ header h1 {
 
 header nav {
     float: right;
+}
+
+header li {
+    float: left;
+    margin-left: 35px;
+}
+
+header li:first-child {
+    margin-right: 15px;
+}
+
+header h1, header a {
+    font-size: 14.5px;
+    font-family: ralewaylight;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+
+span {
+    color: green;
+    font-family: ralewaybold;
 }
