@@ -166,12 +166,18 @@ div .link-button {
     padding-top: 25px;
     padding-left: 21px;
     padding-right: 25px;
-    font-family: ralewayLight;
-    font-size: 18px;
+    font-family: ralewayregular;
+    font-weight: 900;
+    font-size: 16px;
 }
 
 .textContent p {
-    font-size: 13px;
+    padding-top: 24px;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: ralewaylight;
+    font-weight: 200;
+    color: rgb(120, 120, 120);
 }
 
 
