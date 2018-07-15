@@ -163,7 +163,7 @@ div .link-button {
 
 .gallery .textContent {
     position: absolute;
-    padding-top: 25px;
+    padding-top: 26px;
     padding-left: 21px;
     padding-right: 25px;
     font-family: ralewayregular;
@@ -191,5 +191,6 @@ h3:after {
     font-weight: 200;
     color: rgb(120, 120, 120);
 }
+
 
 
