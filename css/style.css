@@ -133,3 +133,40 @@ div .link-button {
     left: 0;
     margin-left: 2px;
 }
+
+.gallery .img {
+    margin-top: 18px;
+    width: 31.5%;
+    display: inline-block;
+    height: 250px;
+    margin-right: 2%;
+}
+
+.gallery .img:first-child {
+    background: url("../images/box1_img.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gallery .img:nth-child(2) {
+    background: url("../images/box2_img.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gallery .img:nth-child(3) {
+    margin-right: 0;
+    width: 32%;
+    border: 1px solid rgb(218, 218, 218);
+    position: relative;
+}
+
+.gallery .textContent {
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 21px;
+    font-family: ralewayLight;
+    font-size: 17px;
+}
+
+
