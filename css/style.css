@@ -171,6 +171,18 @@ div .link-button {
     font-size: 16px;
 }
 
+h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    right: 0;
+    margin: 50px 170px 50px 20px;
+    background: rgb(36, 186, 159);
+    height: 8px;
+
+}
+
 .textContent p {
     padding-top: 24px;
     line-height: 20px;
