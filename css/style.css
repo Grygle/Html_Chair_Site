@@ -165,8 +165,13 @@ div .link-button {
     position: absolute;
     padding-top: 25px;
     padding-left: 21px;
+    padding-right: 25px;
     font-family: ralewayLight;
-    font-size: 17px;
+    font-size: 18px;
+}
+
+.textContent p {
+    font-size: 13px;
 }
 
 
