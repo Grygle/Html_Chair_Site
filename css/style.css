@@ -201,13 +201,14 @@ div .link-button {
 
 .price-box {
     display: inline-block;
-    border: 1px solid grey;
+    border: 1px solid rgb(194, 194, 194);;
     border-radius: 3px;
     background: rgb(249, 249, 249);
     height: 500px;
     width: 31%;
     margin-right: 2.8%;
     margin-top: 130px;
+    position: relative;
 }
 
 .price-box:nth-child(3) {
@@ -219,3 +220,34 @@ div .link-button {
     margin-right: 0;
 }
 
+.circle_big {
+    position: absolute;
+    border: 1px solid rgb(194, 194, 194);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    top: -36px;
+    left: 50%;
+    margin-left: -27px;
+}
+.circle_small {
+    position: absolute;
+    border: 1px solid rgb(194, 194, 194);
+    height: 27px;
+    width: 27px;
+    margin-left: 13px;
+    margin-top: 12px;
+    border-radius: 50%;
+
+}
+
+.grey {
+    background: grey;
+}
+.green {
+    background: rgb(29, 199, 171);
+    border: none;
+}
+.white {
+    background: white;
+}
