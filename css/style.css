@@ -311,11 +311,12 @@ form input {
     margin: 13px 0;
     width: 100%;
     height: 65px;
-    padding-top: 15px;
+    padding-top: 5px;
+    font-size: 30px;
     border: 1px solid rgb(36, 186, 159);
 }
 
-input::placeholder{
+input::placeholder, textarea::placeholder{
     font-family: ralewaylight;
     font-size: 35px;
     color: lightgray;
@@ -343,6 +344,17 @@ input::placeholder{
     height: 8px;
 
 }
+
+textarea {
+    width: 100%;
+    height: 189px;
+    margin-top: 13px;
+    padding-top: 10px;
+    font-size: 30px;
+    border: 1px solid rgb(36, 186, 159);
+    resize: none;
+}
+
 /* end of form */
 
 /* right part of a form */
