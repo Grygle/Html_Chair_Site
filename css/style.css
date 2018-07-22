@@ -298,9 +298,6 @@ div .link-button {
     background: coral;
 }
 
-.column-left--info, .column-right--social {
-    height: 70px;
-}
 form {
     padding-right: 37px;
     padding-left: 4px;
@@ -397,3 +394,18 @@ input::placeholder{
     margin-top: 1px;
 }
 /* end of right part of a form */
+
+/* this is where footer begins */
+
+.column-left--info, .column-right--social {
+    height: 70px;
+}
+
+.column-left--info p {
+    font-size: 18px;
+    font-family: ralewayregular;
+    color: rgb(171, 171, 171);
+    line-height: 72px;
+    margin-left: -2px;
+}
+/* this is where footer ends */
