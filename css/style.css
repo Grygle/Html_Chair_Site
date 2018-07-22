@@ -55,6 +55,7 @@ span {
 .column-left {
     padding-top: 60px;
 }
+
 .chair-image img {
     margin-left: -35px;
     height: 420px;
@@ -64,6 +65,7 @@ span {
 .column-right .banner-name {
     text-transform: uppercase;
 }
+
 .column-right .banner-name {
     font-family: ralewayregular;
 }
@@ -231,6 +233,7 @@ div .link-button {
     left: 50%;
     margin-left: -27px;
 }
+
 .circle_small {
     position: absolute;
     border: 1px solid rgb(194, 194, 194);
@@ -245,10 +248,12 @@ div .link-button {
 .grey {
     background: grey;
 }
+
 .green {
     background: rgb(29, 199, 171);
     border: none;
 }
+
 .white {
     background: white;
 }
@@ -284,8 +289,6 @@ div .link-button {
     height: 530px;
 }
 
-
-
 .column-left--info {
     float: left;
     width: 64%;
@@ -303,6 +306,7 @@ form {
     padding-left: 4px;
     padding-top: 46px;
 }
+
 form input {
     margin: 13px 0;
     width: 100%;
@@ -350,9 +354,11 @@ input::placeholder{
 .rules-acceptance {
     display: inline-block;
 }
+
 .rules-acceptance {
     margin-left: 5%;
 }
+
 .form-ok {
     float: left;
     width: 14%;
@@ -361,6 +367,7 @@ input::placeholder{
     padding-top: 5px;
     border: 1px solid rgb(36, 189, 159);
 }
+
 .rules-acceptance p {
     float: left;
     width: 80%;
@@ -370,7 +377,6 @@ input::placeholder{
     font-family: ralewayregular;
     color: rgb(171, 171, 171);
 }
-
 
 .column-right--send .link-button {
     /*border-radius: 10px;
