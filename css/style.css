@@ -192,6 +192,7 @@ div .link-button {
     color: rgb(120, 120, 120);
 }
 
+/* This is where prices start !!!*/
 .pricing {
     width: 100%;
     background: rgb(241, 241, 241);
@@ -262,4 +263,44 @@ div .link-button {
     left: 0;
     margin-left: 99px;
     margin-top: 80px;
+}
+
+/* Here prices end !!!*/
+
+.column-left--form {
+    float: left;
+    width: 64%;
+    background: greenyellow;
+}
+
+.column-right--send {
+    float: left;
+    width: 36%;
+    background: aquamarine;
+}
+
+.column-left--form, .column-right--send {
+    height: 530px;
+}
+
+
+
+.column-left--info {
+    float: left;
+    width: 64%;
+    background: violet;
+}
+
+.column-right--social {
+    float: left;
+    width: 36%;
+    background: coral;
+}
+
+.column-left--info, .column-right--social {
+    height: 70px;
+}
+
+input::placeholder{
+    font-family: ralewayregular;
 }
