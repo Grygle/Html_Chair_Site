@@ -267,6 +267,7 @@ div .link-button {
 
 /* Here prices end !!!*/
 
+/* form */
 .column-left--form {
     float: left;
     width: 64%;
@@ -301,15 +302,16 @@ div .link-button {
     height: 70px;
 }
 form {
-    padding-right: 35px;
+    padding-right: 37px;
     padding-left: 4px;
-    padding-top: 73px;
+    padding-top: 46px;
 }
 form input {
     margin: 13px 0;
     width: 100%;
     height: 65px;
     padding-top: 15px;
+    border: 1px solid rgb(36, 186, 159);
 }
 
 input::placeholder{
@@ -318,3 +320,80 @@ input::placeholder{
     color: lightgray;
     padding-left: 10px;
 }
+
+.form h3 {
+    font-family: ralewayregular;
+    font-weight: 400;
+    color: rgb(118, 118, 118);
+    padding-top: 21px;
+    padding-left: 5px;
+    font-size: 22px;
+}
+
+.form h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    right: 0;
+    margin: 62px 0px 50px 5px;
+    width: 319px;
+    background: rgb(36, 186, 159);
+    height: 8px;
+
+}
+/* end of form */
+
+/* right part of a form */
+.chair-red {
+    margin-left: 38px;
+    margin-top: 78px;
+}
+
+.rules-acceptance {
+    display: inline-block;
+}
+.rules-acceptance {
+    margin-left: 5%;
+}
+.form-ok {
+    float: left;
+    width: 13%;
+    height: 41px;
+    margin-top: 31px;
+    border: 1px solid rgb(36, 189, 159);
+}
+.rules-acceptance p {
+    float: left;
+    width: 80%;
+    padding-top: 32px;
+    padding-left: 9px;
+    font-size: 18px;
+    font-family: ralewayregular;
+    color: rgb(171, 171, 171);
+}
+
+
+.column-right--send .link-button {
+    /*border-radius: 10px;
+    background-color: rgb(36, 186, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    height: 74px;
+    width: 345px;
+    margin-top: 35px;
+    margin-left: 19px;
+
+}
+
+.column-right--send .link-button a {
+    /*color: white;
+    text-transform: uppercase;
+    font-family: ralewayLight;
+    text-decoration: none;*/
+    font-size: 36px;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+/* end of right part of a form */
