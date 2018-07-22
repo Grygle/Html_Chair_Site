@@ -56,9 +56,9 @@ span {
     padding-top: 60px;
 }
 .chair-image img {
-    margin-left: -15px;
+    margin-left: -35px;
     height: 420px;
-    width: 550px;
+    max-width: 585px;
 }
 
 .column-right .banner-name {
