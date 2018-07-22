@@ -292,13 +292,13 @@ div .link-button {
 .column-left--info {
     float: left;
     width: 64%;
-    background: violet;
+/*    background: violet;   THIS BACKGROUND IS TEMPORARY */
 }
 
 .column-right--social {
     float: left;
     width: 36%;
-    background: coral;
+/*    background: coral;      THIS BACKGROUND IS TEMPORARY */
 }
 
 form {
@@ -426,5 +426,29 @@ textarea {
     color: rgb(171, 171, 171);
     line-height: 72px;
     margin-left: -2px;
+}
+.social-images {
+    float: left;
+    width: 34px;
+    height: 100%;
+    margin-top: 9px;
+    margin-left: 5px;
+}
+
+.social-images--all {
+    margin-left: 16px;
+}
+
+.column-right--social p {
+    float: right;
+    margin-right: 2px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: ralewayregular;
+    color: rgb(171, 171, 171);
+}
+.bold {
+    font-weight: 900;
+    color: rgb(171, 171, 171);
 }
 /* this is where footer ends */
