@@ -338,7 +338,7 @@ input::placeholder, textarea::placeholder{
     left: 0;
     top: 1px;
     right: 0;
-    margin: 62px 0px 50px 5px;
+    margin: 62px 0 50px 5px;
     width: 319px;
     background: rgb(36, 186, 159);
     height: 8px;
