@@ -427,6 +427,7 @@ textarea {
     line-height: 72px;
     margin-left: -2px;
 }
+
 .social-images {
     float: left;
     width: 34px;
@@ -447,6 +448,7 @@ textarea {
     font-family: ralewayregular;
     color: rgb(171, 171, 171);
 }
+
 .bold {
     font-weight: 900;
     color: rgb(171, 171, 171);
