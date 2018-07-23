@@ -142,6 +142,7 @@ div .link-button {
     display: inline-block;
     height: 250px;
     margin-right: 2%;
+    position: relative;
 }
 
 .gallery .img:first-child {
@@ -160,10 +161,17 @@ div .link-button {
     margin-right: 0;
     width: 32%;
     border: 1px solid rgb(218, 218, 218);
-    position: relative;
 }
 
-.gallery .textContent {
+.gallery .img-frame {
+    position: absolute;
+    bottom: 38px;
+    height: 62px;
+    width: 100%;
+    background: rgba(255, 255, 125581, .4);
+}
+
+.gallery .textContent, .gallery .img-text {
     position: absolute;
     padding-top: 26px;
     padding-left: 21px;
@@ -173,6 +181,24 @@ div .link-button {
     font-size: 16px;
 }
 
+
+.gallery .img-text {
+    bottom: 0;
+    margin-bottom: 29px;
+    margin-left: -6px;
+    font-weight: 400;
+}
+
+
+.gallery .img-frame .img-text:before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 140px;
+    margin-top: 18px;
+    margin-left: -4px;
+    background: rgb(36, 186, 159);
+}
 .gallery h3:after {
     content: "";
     position: absolute;
@@ -245,16 +271,16 @@ div .link-button {
 
 }
 
-.grey {
+.inner-circle {
     background: grey;
 }
 
-.green {
+.outer-mid-circle {
     background: rgb(29, 199, 171);
     border: none;
 }
 
-.white {
+.outer-circle {
     background: white;
 }
 
@@ -269,7 +295,12 @@ div .link-button {
     margin-left: 99px;
     margin-top: 80px;
 }
-
+.text-circle {
+    content: "";
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 30px;
+}
 /* Here prices end !!!*/
 
 /* form */
