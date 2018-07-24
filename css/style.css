@@ -236,7 +236,7 @@ div .link-button {
     height: 500px;
     width: 31%;
     margin-right: 2.8%;
-    margin-top: 130px;
+    margin-top: 89px;/* to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc*/
     position: relative;
 }
 
@@ -295,12 +295,154 @@ div .link-button {
     margin-left: 99px;
     margin-top: 80px;
 }
-.text-circle {
+.text-circle p.value,
+.text-circle p.valueMiddle {
     content: "";
     position: absolute;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 34px;
+    margin-top: 28px;
+    font-size: 45px;
+    font-family: ralewayregular;
 }
+.text-circle p.value {
+    color: grey;
+}
+.text-circle p.valueMiddle {
+    color: rgb(36, 186, 159);
+}
+.text-circle p.money,
+.text-circle p.middleColor {
+    content: "";
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 82px;
+    font-size: 15px;
+    font-family: ralewayregular;
+}
+.text-circle p.money {
+    color: grey;
+}
+.text-circle p.middleColor {
+    color: rgb(36, 186, 159);
+}
+
+.text-circle p.moved {
+    margin-left: 18px;
+}
+.text-circle sup {
+    font-size: 17px;
+    top: -1.5em;
+}
+
+.perks {
+    position: absolute;
+    width: 99%;
+    margin-left: 2px;
+}
+
+.perks .perks-second,
+.perks .perks-first,
+.perks .perks-third,
+.perks .perks-fourth,
+.perks .perks-second--diff,
+.perks .perks-first--diff,
+.perks .perks-third--diff {
+    height: 44px;
+}
+.perks .perks-first,
+.perks .perks-first--diff {
+    margin-top: 34px;
+}
+.perks .perks-first,
+.perks .perks-third {
+    background: #E4E4E4;
+}
+.perks .perks-second,
+.perks .perks-fourth,
+.perks .perks-second--diff {
+    background: #F1F1F1;
+}
+.perks .perks-first--diff,
+.perks .perks-third--diff {
+    background: #FFF;
+}
+.perks {
+    font-family: ralewayregular;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 23px;
+    color: #565656;
+}
+.perks p {
+    padding-top: 6px;
+}
+div .perks-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    background-color: rgb(36, 186, 159);
+    transform: translate(-50%, -50%);
+}
+div .different-perks-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+.perks-button a {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-family: ralewayLight;
+    bottom: 0;
+    left: 50%;
+    text-decoration: none;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.different-perks-button a {
+    position: absolute;
+    color: rgb(36, 186, 159);
+    text-transform: uppercase;
+    font-family: ralewayLight;
+    bottom: 0;
+    left: 50%;
+    text-decoration: none;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+}
+
+/* to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc*/
+.pricing h3 {
+    font-size: 24px;
+    font-family: ralewayregular;
+    margin-top: 31px;
+}
+
+.pricing h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 26px;
+    width: 316px;
+    margin: 47px 175px 50px 0;
+    background: rgb(36, 186, 159);
+    height: 8px;
+
+}
+
+/*
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%          perks-button           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ */
 /* Here prices end !!!*/
 
 /* form */
