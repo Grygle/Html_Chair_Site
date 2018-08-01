@@ -6,51 +6,118 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container clearfix">
             <h1>sit <span>on</span> chair</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">o firmie</a></li>
+
+            <nav class="navigation-header">
+                <ul class="navigation-list">
+                    <li class="navigation-list-el">
+                        <a href="#">o firmie</a>
+                        <ul class="navigation-sublist">
+                            <li>
+                                <a class="navigation-innerlist-link" href="">Aktualnosci</a>
+                            </li>
+                            <li>
+                                <a class="navigation-innerlist-link" href="">Nasz team</a>
+                            </li>
+                            <li>
+                                <a class="navigation-innerlist-link" href="">Historia</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#">galeria</a></li>
                     <li><a href="#">kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+
     <section class="introduction">
-        <div class="container clearfix">
-            <div class="scroll-left"><</div>
-            <div class="column-left">
-                <div class="chair-image">
-                    <img src="images/black_chair.png">
+        <div class="container intro clearfix">
+
+                <div class="scroll-left">
+                    <button><</button>
                 </div>
+
+                <div class="slide1 slide1--active">
+                    <div class="column-left">
+                        <div class="chair-image">
+                            <img src="images/black_chair.png">
+                        </div>
+                    </div>
+                    <div class="column-right">
+                        <div class="banner-name">sit <span>on</span> our <span>chair</span>
+                        </div>
+                        <div class="content"><p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
+                        </p>
+                        </div>
+                        <div class="link-button">
+                            <a href="#">zobacz wiecej</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide1">
+                    <div class="column-left">
+                        <div class="chair-image">
+                            <img src="images/orange_chair.png">
+                        </div>
+                    </div>
+                    <div class="column-right">
+                        <div class="banner-name">sit <span>on</span> our <span>chair</span>
+                        </div>
+                        <div class="content"><p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
+                        </p></div>
+
+                        <div class="link-button">
+                            <a href="#">zobacz wiecej</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide1">
+                    <div class="column-left">
+                        <div class="chair-image">
+                            <img src="images/orange_chair.png">
+                        </div>
+                    </div>
+                    <div class="column-right">
+                        <div class="banner-name">sit <span>on</span> our <span>chair</span>
+                        </div>
+                        <div class="content"><p>This is another lorem ipsum chair.
+                        </p></div>
+
+                        <div class="link-button">
+                            <a href="#">zobacz wiecej</a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="scroll-right">
+                <button>></button>
             </div>
-            <div class="column-right">
-                <div class="banner-name">sit <span>on</span> our <span>chair</span>
-                </div>
-                <div class="content"><p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
-                </p></div>
-
-                <div class="link-button">
-                    <a href="#">zobacz wiecej</a>
-                </div>
-
-            </div>
-            <div class="scroll-right">></div>
-
         </div>
     </section>
+
+
+
+
+
+
+    
     <section class="gallery">
         <div class="container clearfix">
-            <div class="img">
+            <div class="img chair-name">
                 <div class="img-frame">
                     <h3 class="img-text">Chair CLAIR</h3>
                 </div>
             </div>
-            <div class="img">
+            <div class="img chair-name">
                 <div class="img-frame">
                     <h3 class="img-text">Chair MARGARITA</h3>
                 </div>
@@ -64,12 +131,14 @@
         </div>
     </section>
     <section class="pricing">
-        <div class="container clearfix">
+        <div class="container intro clearfix">
             <h3>CENNIK</h3>
             <div class="price-box">
                 <div class="circle_big outer-circle">
                     <div class="circle_small inner-circle"></div>
                 </div>
+
+                <h4 class="basic">BASIC PLAN</h4>
                 <div class="great-circle">
                     <div class="text-circle">
                         <p class="value">85<sup>99</sup></p>
@@ -92,6 +161,7 @@
                 <div class="circle_big outer-mid-circle">
                     <div class="circle_small outer-circle"></div>
                 </div>
+                <h4 class="standard">STANDARD PLAN</h4>
                 <div class="great-circle">
                     <div class="text-circle">
                         <p class="valueMiddle middle">95<sup>99</sup></p>
@@ -117,6 +187,7 @@
                 <div class="circle_big outer-circle">
                     <div class="circle_small inner-circle"></div>
                 </div>
+                <h4 class="advanced">ADVANCE PLAN</h4>
                 <div class="great-circle">
                     <div class="text-circle">
                         <p class="moved value">211<sup>00</sup></p>
@@ -144,7 +215,7 @@
         </div>
     </section>
     <section class="form">
-        <div class="container clearfix">
+        <div class="container intro clearfix">
             <div class="column-left--form">
                 <h3>KONTAKT</h3>
                 <form action="">
@@ -169,14 +240,30 @@
                 <div class="chair-image--red">
                     <img class="chair-red" src="images/red_chair.png">
                 </div>
+
+
+                <!--<div class="rules-acceptance clearfix">-->
+                    <!--<div>-->
+                        <!--<img class="form-ok" src="images/form_ok.jpg">-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<p>Zgadzam sie na przetwarzanie danych osobowych</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
                 <div class="rules-acceptance clearfix">
-                    <div>
-                        <img class="form-ok" src="images/form_ok.jpg">
-                    </div>
-                    <div>
-                        <p>Zgadzam sie na przetwarzanie danych osobowych</p>
-                    </div>
+
+                    <label class="form-checkbox">
+                        <input type="checkbox">
+                        <span class="form-span-click"></span>
+                        <p>
+                                Zgadzam sie na przetwarzanie danych osobowych
+                            </p>
+                    </label>
+
                 </div>
+
                 <div class="link-button">
                     <a href="#">WYSLIJ</a>
                 </div>

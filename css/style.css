@@ -2,9 +2,11 @@
     padding: 10px 0;
     width: 1055px;
     margin: 0 auto;
-    position: relative;
 }
 
+/*
+header
+ */
 header {
     background: black;
     height: 38px;
@@ -29,7 +31,7 @@ header li:first-child {
 
 header h1, header a {
     font-size: 14.5px;
-    font-family: ralewaylight;
+    font-family: ralewaylight, Arial, sans-serif;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
@@ -38,13 +40,84 @@ header h1, header a {
 
 span {
     color: rgb(39, 199, 171);
-    font-family: ralewaybold;
+    font-family: ralewaybold, Arial, sans-serif;
 }
+
+.navigation-header {
+    z-index: 3;
+    position: relative;
+    background: black;
+}
+
+.navigation-list {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+.navigation-list-el {
+    position: relative;
+}
+
+.navigation-sublist {
+    list-style:none;
+    margin:0;
+    position: absolute;
+    top:37px;
+    left:50%;
+    transform: translate(-50%, 0);
+    background: black;
+    padding:10px 2px;
+    opacity:0;
+    visibility: hidden;
+    transition: 0.5s opacity;
+}
+.navigation-list-el:hover .navigation-sublist {
+    opacity:1;
+    visibility: visible;
+}
+
+.navigation-sublist:before {
+    content:'';
+    width:0;
+    height:0;
+    display: block;
+    border:10px solid transparent;
+    border-bottom-color: black;
+    position: absolute;
+    top:-20px;
+    left:50%;
+    transform: translate(-50%, 0);
+}
+.navigation-sublist:after {
+    content:'';
+    background: transparent;
+    width:100%;
+    height:20px;
+    position: absolute;
+    left:0;
+    top:-20px;
+}
+
+.navigation-innerlist-link {
+    color:#fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-left: -20px;
+}
+
+/*
+slider container
+ */
 
 .introduction {
     height: 503px;
     width: 100%;
     background: linear-gradient(rgb(255, 255, 255), rgb(200, 200, 200));
+}
+.intro {
+    position: relative;
 }
 
 .introduction .column-left, .introduction .column-right {
@@ -67,11 +140,11 @@ span {
 }
 
 .column-right .banner-name {
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
 }
 
 .column-right .content {
-    font-family: ralewaylight;
+    font-family: ralewaylight, Arial, sans-serif;
 }
 
 div .link-button {
@@ -91,7 +164,7 @@ div .link-button {
     color: white;
     text-transform: uppercase;
     font-size: 23px;
-    font-family: ralewayLight;
+    font-family: ralewayLight, Arial, sans-serif;
     margin-left: 15px;
     margin-top: 5px;
     text-decoration: none;
@@ -122,7 +195,7 @@ div .link-button {
     margin-top: 213px;
     font-size: 73px;
     color: rgb(36, 186, 159);
-    font-family: ralewayLight;
+    font-family: ralewayLight, Arial, sans-serif;
     cursor: pointer;
 }
 
@@ -135,6 +208,54 @@ div .link-button {
     left: 0;
     margin-left: 2px;
 }
+
+.slide1 {
+    display: none;
+}
+
+.slide1--active {
+    display: block;
+}
+
+
+.scroll-right button,
+.scroll-left button{
+    color: rgb(36, 186, 159);;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 75px;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+/*
+slider container
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .gallery .img {
     margin-top: 18px;
@@ -163,12 +284,17 @@ div .link-button {
     border: 1px solid rgb(218, 218, 218);
 }
 
+.chair-name {}
 .gallery .img-frame {
     position: absolute;
     bottom: 38px;
     height: 62px;
     width: 100%;
     background: rgba(255, 255, 125581, .4);
+    /*
+    w js
+    tutaj visibility: hidden;
+     */
 }
 
 .gallery .textContent, .gallery .img-text {
@@ -176,7 +302,7 @@ div .link-button {
     padding-top: 26px;
     padding-left: 21px;
     padding-right: 25px;
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
     font-weight: 900;
     font-size: 16px;
 }
@@ -215,10 +341,16 @@ div .link-button {
     padding-top: 24px;
     line-height: 20px;
     font-size: 14px;
-    font-family: ralewaylight;
+    font-family: ralewaylight, Arial, sans-serif;
     font-weight: 200;
     color: rgb(120, 120, 120);
 }
+/*
+GALLERY ENDS HERE
+ */
+
+
+
 
 /* This is where prices start !!!*/
 .pricing {
@@ -284,6 +416,37 @@ div .link-button {
     background: white;
 }
 
+.price-box h4.basic {
+    position: absolute;
+    font-size: 22px;
+    font-family: ralewayregular, Arial, sans-serif;
+    top: 0;
+    left: 50%;
+    margin-left: -59px;
+    margin-top: 30px;
+    color: rgb(36, 186, 159);
+}
+.price-box h4.standard {
+    position: absolute;
+    font-size: 22px;
+    font-family: ralewayregular, Arial, sans-serif;
+    top: 0;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: 30px;
+    color: white;
+}
+.price-box h4.advanced {
+    position: absolute;
+    font-size: 22px;
+    font-family: ralewayregular, Arial, sans-serif;
+    top: 0;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: 30px;
+    color: rgb(36, 186, 159);
+}
+
 .great-circle {
     border: 1px solid rgb(194, 194, 194);
     background: white;
@@ -302,7 +465,7 @@ div .link-button {
     margin-left: 34px;
     margin-top: 28px;
     font-size: 45px;
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
 }
 .text-circle p.value {
     color: grey;
@@ -317,7 +480,7 @@ div .link-button {
     margin-left: 28px;
     margin-top: 82px;
     font-size: 15px;
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
 }
 .text-circle p.money {
     color: grey;
@@ -367,7 +530,7 @@ div .link-button {
     background: #FFF;
 }
 .perks {
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
     text-align: center;
     padding-top: 5px;
     font-size: 23px;
@@ -401,7 +564,7 @@ div .different-perks-button {
     position: absolute;
     color: white;
     text-transform: uppercase;
-    font-family: ralewayLight;
+    font-family: ralewayLight, Arial, sans-serif;
     bottom: 0;
     left: 50%;
     text-decoration: none;
@@ -413,7 +576,7 @@ div .different-perks-button {
     position: absolute;
     color: rgb(36, 186, 159);
     text-transform: uppercase;
-    font-family: ralewayLight;
+    font-family: ralewayLight, Arial, sans-serif;
     bottom: 0;
     left: 50%;
     text-decoration: none;
@@ -421,10 +584,10 @@ div .different-perks-button {
     transform: translate(-50%, -50%);
 }
 
-/* to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc*/
+/* to moze czasem cos psuc*/
 .pricing h3 {
     font-size: 24px;
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
     margin-top: 31px;
 }
 
@@ -490,14 +653,14 @@ form input {
 }
 
 input::placeholder, textarea::placeholder{
-    font-family: ralewaylight;
+    font-family: ralewaylight, Arial, sans-serif;
     font-size: 35px;
     color: lightgray;
     padding-left: 10px;
 }
 
 .form h3 {
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
     font-weight: 400;
     color: rgb(118, 118, 118);
     padding-top: 21px;
@@ -556,31 +719,43 @@ textarea {
 .rules-acceptance p {
     float: left;
     width: 80%;
-    padding-top: 32px;
+    padding-top: 17px;
     padding-left: 9px;
     font-size: 18px;
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
     color: rgb(171, 171, 171);
 }
 
+
+
+.form-checkbox input {
+    display: block;
+    margin-left: -9999px;
+}
+
+.form-span-click {
+    float: left;
+    width:50px;
+    height:50px;
+    margin-top: 10px;
+    border:1px solid gray;
+    margin-right:10px;
+}
+.form-checkbox input:checked + .form-span-click {
+    background: url("../images/form_ok.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .column-right--send .link-button {
-    /*border-radius: 10px;
-    background-color: rgb(36, 186, 159);
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
     height: 74px;
     width: 345px;
-    margin-top: 35px;
+    margin-top: 41px;
     margin-left: 19px;
 
 }
 
 .column-right--send .link-button a {
-    /*color: white;
-    text-transform: uppercase;
-    font-family: ralewayLight;
-    text-decoration: none;*/
     font-size: 36px;
     margin-left: 5px;
     margin-top: 1px;
@@ -595,7 +770,7 @@ textarea {
 
 .column-left--info p {
     font-size: 18px;
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
     color: rgb(171, 171, 171);
     line-height: 72px;
     margin-left: -2px;
@@ -618,7 +793,7 @@ textarea {
     margin-right: 2px;
     margin-top: 20px;
     font-size: 22px;
-    font-family: ralewayregular;
+    font-family: ralewayregular, Arial, sans-serif;
     color: rgb(171, 171, 171);
 }
 
