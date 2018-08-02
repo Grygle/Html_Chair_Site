@@ -7,6 +7,10 @@
 /*
 header
  */
+body {
+    font-family: 'ralewayregular', Arial, sans-serif;
+}
+
 header {
     background: black;
     height: 38px;
@@ -31,7 +35,7 @@ header li:first-child {
 
 header h1, header a {
     font-size: 14.5px;
-    font-family: ralewaylight, Arial, sans-serif;
+    font-family: 'ralewaylight', Arial, sans-serif;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
@@ -40,7 +44,7 @@ header h1, header a {
 
 span {
     color: rgb(39, 199, 171);
-    font-family: ralewaybold, Arial, sans-serif;
+    font-family: 'ralewaybold', Arial, sans-serif;
 }
 
 .navigation-header {
@@ -55,6 +59,7 @@ span {
     padding:0;
     display: flex;
 }
+
 .navigation-list-el {
     position: relative;
 }
@@ -139,12 +144,12 @@ slider container
     text-transform: uppercase;
 }
 
-.column-right .banner-name {
-    font-family: ralewayregular, Arial, sans-serif;
-}
+/*.column-right .banner-name {*/
+    /*font-family: ralewayregular, Arial, sans-serif;*/
+/*}*/
 
 .column-right .content {
-    font-family: ralewaylight, Arial, sans-serif;
+    font-family: 'ralewaylight', Arial, sans-serif;
 }
 
 div .link-button {
@@ -164,7 +169,7 @@ div .link-button {
     color: white;
     text-transform: uppercase;
     font-size: 23px;
-    font-family: ralewayLight, Arial, sans-serif;
+    font-family: 'ralewayLight', Arial, sans-serif;
     margin-left: 15px;
     margin-top: 5px;
     text-decoration: none;
@@ -195,7 +200,7 @@ div .link-button {
     margin-top: 213px;
     font-size: 73px;
     color: rgb(36, 186, 159);
-    font-family: ralewayLight, Arial, sans-serif;
+    font-family: 'ralewayLight', Arial, sans-serif;
     cursor: pointer;
 }
 
@@ -233,29 +238,9 @@ div .link-button {
 slider container
  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+gallery - 2 pictures + text
+ */
 
 .gallery .img {
     margin-top: 18px;
@@ -284,17 +269,12 @@ slider container
     border: 1px solid rgb(218, 218, 218);
 }
 
-.chair-name {}
 .gallery .img-frame {
     position: absolute;
     bottom: 38px;
     height: 62px;
     width: 100%;
     background: rgba(255, 255, 125581, .4);
-    /*
-    w js
-    tutaj visibility: hidden;
-     */
 }
 
 .gallery .textContent, .gallery .img-text {
@@ -302,11 +282,9 @@ slider container
     padding-top: 26px;
     padding-left: 21px;
     padding-right: 25px;
-    font-family: ralewayregular, Arial, sans-serif;
     font-weight: 900;
     font-size: 16px;
 }
-
 
 .gallery .img-text {
     bottom: 0;
@@ -325,6 +303,7 @@ slider container
     margin-left: -4px;
     background: rgb(36, 186, 159);
 }
+
 .gallery h3:after {
     content: "";
     position: absolute;
@@ -341,18 +320,19 @@ slider container
     padding-top: 24px;
     line-height: 20px;
     font-size: 14px;
-    font-family: ralewaylight, Arial, sans-serif;
+    font-family: 'ralewaylight', Arial, sans-serif;
     font-weight: 200;
     color: rgb(120, 120, 120);
 }
 /*
-GALLERY ENDS HERE
+gallery - 2 pictures + text
  */
 
 
 
-
-/* This is where prices start !!!*/
+/*
+price boxes
+*/
 .pricing {
     width: 100%;
     background: rgb(241, 241, 241);
@@ -368,7 +348,7 @@ GALLERY ENDS HERE
     height: 500px;
     width: 31%;
     margin-right: 2.8%;
-    margin-top: 89px;/* to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc to moze czasem cos psuc*/
+    margin-top: 89px;
     position: relative;
 }
 
@@ -400,7 +380,6 @@ GALLERY ENDS HERE
     margin-left: 13px;
     margin-top: 12px;
     border-radius: 50%;
-
 }
 
 .inner-circle {
@@ -419,7 +398,6 @@ GALLERY ENDS HERE
 .price-box h4.basic {
     position: absolute;
     font-size: 22px;
-    font-family: ralewayregular, Arial, sans-serif;
     top: 0;
     left: 50%;
     margin-left: -59px;
@@ -429,7 +407,6 @@ GALLERY ENDS HERE
 .price-box h4.standard {
     position: absolute;
     font-size: 22px;
-    font-family: ralewayregular, Arial, sans-serif;
     top: 0;
     left: 50%;
     margin-left: -85px;
@@ -439,7 +416,6 @@ GALLERY ENDS HERE
 .price-box h4.advanced {
     position: absolute;
     font-size: 22px;
-    font-family: ralewayregular, Arial, sans-serif;
     top: 0;
     left: 50%;
     margin-left: -85px;
@@ -458,6 +434,7 @@ GALLERY ENDS HERE
     margin-left: 99px;
     margin-top: 80px;
 }
+
 .text-circle p.value,
 .text-circle p.valueMiddle {
     content: "";
@@ -465,14 +442,16 @@ GALLERY ENDS HERE
     margin-left: 34px;
     margin-top: 28px;
     font-size: 45px;
-    font-family: ralewayregular, Arial, sans-serif;
 }
+
 .text-circle p.value {
     color: grey;
 }
+
 .text-circle p.valueMiddle {
     color: rgb(36, 186, 159);
 }
+
 .text-circle p.money,
 .text-circle p.middleColor {
     content: "";
@@ -480,11 +459,12 @@ GALLERY ENDS HERE
     margin-left: 28px;
     margin-top: 82px;
     font-size: 15px;
-    font-family: ralewayregular, Arial, sans-serif;
 }
+
 .text-circle p.money {
     color: grey;
 }
+
 .text-circle p.middleColor {
     color: rgb(36, 186, 159);
 }
@@ -492,6 +472,7 @@ GALLERY ENDS HERE
 .text-circle p.moved {
     margin-left: 18px;
 }
+
 .text-circle sup {
     font-size: 17px;
     top: -1.5em;
@@ -512,33 +493,40 @@ GALLERY ENDS HERE
 .perks .perks-third--diff {
     height: 44px;
 }
+
 .perks .perks-first,
 .perks .perks-first--diff {
     margin-top: 34px;
 }
+
 .perks .perks-first,
 .perks .perks-third {
     background: #E4E4E4;
 }
+
 .perks .perks-second,
 .perks .perks-fourth,
 .perks .perks-second--diff {
     background: #F1F1F1;
 }
+
 .perks .perks-first--diff,
 .perks .perks-third--diff {
     background: #FFF;
 }
+
 .perks {
-    font-family: ralewayregular, Arial, sans-serif;
     text-align: center;
     padding-top: 5px;
     font-size: 23px;
     color: #565656;
 }
+
 .perks p {
     padding-top: 6px;
 }
+
+div .different-perks-button,
 div .perks-button {
     position: absolute;
     bottom: 0;
@@ -546,48 +534,37 @@ div .perks-button {
     border-radius: 10px;
     height: 35px;
     width: 120px;
-    background-color: rgb(36, 186, 159);
-    transform: translate(-50%, -50%);
-}
-div .different-perks-button {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    border-radius: 10px;
-    height: 35px;
-    width: 120px;
-    background-color: white;
     transform: translate(-50%, -50%);
 }
 
-.perks-button a {
+div .perks-button {
+    background-color: rgb(36, 186, 159);
+}
+
+div .different-perks-button {
+    background-color: white;
+}
+.perks-button a,
+.different-perks-button a {
     position: absolute;
-    color: white;
     text-transform: uppercase;
-    font-family: ralewayLight, Arial, sans-serif;
+    font-family: 'ralewayLight', Arial, sans-serif;
     bottom: 0;
     left: 50%;
     text-decoration: none;
     font-size: 15px;
     transform: translate(-50%, -50%);
+}
+.perks-button a {
+    color: #fff;
 }
 
 .different-perks-button a {
-    position: absolute;
     color: rgb(36, 186, 159);
-    text-transform: uppercase;
-    font-family: ralewayLight, Arial, sans-serif;
-    bottom: 0;
-    left: 50%;
-    text-decoration: none;
-    font-size: 15px;
-    transform: translate(-50%, -50%);
 }
 
-/* to moze czasem cos psuc*/
 .pricing h3 {
     font-size: 24px;
-    font-family: ralewayregular, Arial, sans-serif;
     margin-top: 31px;
 }
 
@@ -600,25 +577,22 @@ div .different-perks-button {
     margin: 47px 175px 50px 0;
     background: rgb(36, 186, 159);
     height: 8px;
-
 }
+/*
+price boxes
+*/
 
 /*
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%          perks-button           %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- */
-/* Here prices end !!!*/
-
-/* form */
+form - left
+*/
 .column-left--form {
     float: left;
     width: 64%;
-/*    background: greenyellow;  THIS BACKGROUND IS TEMPORARY */
 }
 
 .column-right--send {
     float: left;
     width: 36%;
-/*    background: aquamarine;   THIS BACKGROUND IS TEMPORARY */
 }
 
 .column-left--form, .column-right--send {
@@ -628,13 +602,11 @@ div .different-perks-button {
 .column-left--info {
     float: left;
     width: 64%;
-/*    background: violet;   THIS BACKGROUND IS TEMPORARY */
 }
 
 .column-right--social {
     float: left;
     width: 36%;
-/*    background: coral;      THIS BACKGROUND IS TEMPORARY */
 }
 
 form {
@@ -653,14 +625,13 @@ form input {
 }
 
 input::placeholder, textarea::placeholder{
-    font-family: ralewaylight, Arial, sans-serif;
+    font-family: 'ralewaylight', Arial, sans-serif;
     font-size: 35px;
     color: lightgray;
     padding-left: 10px;
 }
 
 .form h3 {
-    font-family: ralewayregular, Arial, sans-serif;
     font-weight: 400;
     color: rgb(118, 118, 118);
     padding-top: 21px;
@@ -691,9 +662,13 @@ textarea {
     resize: none;
 }
 
-/* end of form */
+/*
+form - left
+*/
 
-/* right part of a form */
+/*
+form - right
+*/
 .chair-red {
     margin-left: 38px;
     margin-top: 78px;
@@ -716,17 +691,14 @@ textarea {
     border: 1px solid rgb(36, 189, 159);
 }
 
-.rules-acceptance p {
+.rules-acceptance .terms-agreement {
     float: left;
     width: 80%;
     padding-top: 17px;
     padding-left: 9px;
     font-size: 18px;
-    font-family: ralewayregular, Arial, sans-serif;
     color: rgb(171, 171, 171);
 }
-
-
 
 .form-checkbox input {
     display: block;
@@ -741,6 +713,7 @@ textarea {
     border:1px solid gray;
     margin-right:10px;
 }
+
 .form-checkbox input:checked + .form-span-click {
     background: url("../images/form_ok.jpg");
     background-position: center;
@@ -760,17 +733,19 @@ textarea {
     margin-left: 5px;
     margin-top: 1px;
 }
-/* end of right part of a form */
+/*
+form - right
+*/
 
-/* this is where footer begins */
-
+/*
+footer
+*/
 .column-left--info, .column-right--social {
     height: 70px;
 }
 
 .column-left--info p {
     font-size: 18px;
-    font-family: ralewayregular, Arial, sans-serif;
     color: rgb(171, 171, 171);
     line-height: 72px;
     margin-left: -2px;
@@ -793,7 +768,6 @@ textarea {
     margin-right: 2px;
     margin-top: 20px;
     font-size: 22px;
-    font-family: ralewayregular, Arial, sans-serif;
     color: rgb(171, 171, 171);
 }
 
@@ -801,4 +775,6 @@ textarea {
     font-weight: 900;
     color: rgb(171, 171, 171);
 }
-/* this is where footer ends */
+/*
+footer
+*/
