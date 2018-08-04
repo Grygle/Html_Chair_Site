@@ -31,50 +31,35 @@ document.addEventListener('DOMContentLoaded', function() {
         arrayOfSlides.push(slides[i]);
     }
 
+    const checkPicIndex = function(n){
+        if(n < 0){
+            picIndex = arrayOfSlides.length-1;
+        }else if(n >= arrayOfSlides.length){
+            picIndex = 0;
+        } else{
+            picIndex = n;
+        }
+        return picIndex;
+    };
+
         scrollRight.addEventListener('click', function () {
 
-            if(picIndex < 0){
-                picIndex = slides.length-1;
-            }else if(picIndex >= slides.length){
-                picIndex = 0;
-            }
-
+            checkPicIndex(picIndex);
             slides[picIndex].classList.remove('slide1--active');
-
             picIndex++;
 
-            if(picIndex < 0){
-                picIndex = slides.length-1;
-            }else if(picIndex >= slides.length){
-                picIndex = 0;
-            }
-
+            checkPicIndex(picIndex);
             slides[picIndex].classList.add('slide1--active');
-
-
         });
 
 
         scrollLeft.addEventListener('click', function () {
 
-            if(picIndex < 0){
-                picIndex = slides.length-1;
-            }else if(picIndex >= slides.length){
-                picIndex = 0;
-            }
-
+            checkPicIndex(picIndex);
             slides[picIndex].classList.remove('slide1--active');
-
             picIndex--;
 
-            if(picIndex < 0){
-                picIndex = slides.length-1;
-            }else if(picIndex >= slides.length){
-                picIndex = 0;
-            }
-
+            checkPicIndex(picIndex);
             slides[picIndex].classList.add('slide1--active');
-
-
         });
 });
