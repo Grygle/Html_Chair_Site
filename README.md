@@ -11,5 +11,3 @@ But for this requirement, the site would not have so many unnecessary margins/pa
 <b>JavaScript consists of some scripts:</b>
 - hiding names when hovering mouse over chair picture
 - slider that gives an opportunity to see other sections
-
-Hover for menu doesn't use JavaScript
